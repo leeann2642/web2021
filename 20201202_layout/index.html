@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		*{margin: 0;padding: 0;} /*=>초기값 */
+		a:link,a:visited{
+			color: blue;
+			text-decoration: none;
+		}
+		div{
+			/*display: inline;*/ /*블럭단위를 인라인으로*/
+			display: inline-block;
+			width:200px;height: 200px;
+			background-color: skyblue;
+		/*	margin: 20px;*/padding: 20px; /*인라인시 패딩 마진값 오른쪽 왼쪽만 적용됨*/
+		margin-left: -2px;
+		}
+		a{
+			display:block;
+			background-color: #f00;
+			width: 100px;height: 100px;
+		}
+
+	</style>
+</head>
+<body>
+	<div>text</div>
+	<div>text</div>
+	<div>text</div>
+	<a href="#">menu</a>
+	<!-- <p>text</p> -->
+</body>
+</html>

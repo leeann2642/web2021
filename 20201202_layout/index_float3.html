@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>float3</title>
+	<style>
+		*{margin: 0;padding: 0;}
+		a:link,a:visited{color: #000;
+			text-decoration: none;
+		}
+		li{list-style: none;}
+		.clearfix:after{
+			content: "";
+			display: block;
+			clear: both;
+		}
+
+		div.head{
+			width: 500px;
+			background-color: violet;
+			margin: 0 auto;
+			text-align: center;
+			line-height: 40px;
+		}
+		div.head>ul{}
+		div.head>ul>li{
+			float: left;
+			width: 100px; height: 40px;/*=20%*/
+			text-align: center;
+			line-height: 40px;
+			cursor: pointer;
+
+		}
+		div.head>ul>li:hover{
+			background-color: #ccc;
+		}
+	</style>
+</head>
+<body>
+	<div class="head">
+		<!-- logo -->
+		<li>logo</li>
+		
+		<ul class="clearfix">
+			<li>menu1</li>
+			<li>menu2</li>
+			<li>menu3</li>
+			<li>menu4</li>
+			<li>menu5</li>
+		</ul>
+	</div>
+</body>
+</html>

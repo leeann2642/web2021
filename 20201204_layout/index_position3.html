@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>position3</title>
+	<link rel="stylesheet" href="css/reset.css">
+
+	<style>
+		/*header*/
+		.header{
+			width: 1000px;height: 100px;background-color: skyblue;
+			margin: 0 auto;
+			position: relative;
+			text-align: center;
+		}
+		.header h1{
+			background-color:pink; width: 500px; margin: 0 auto;
+			text-align: center;
+		}
+		.sns{position: absolute;background-color:green; 
+			top: 0;right: 0;
+			width: 300px;height: 40px; line-height: 40px;
+		}
+		.gnb{width: 100%;background-color:violet;height: 40px;
+			position: absolute;bottom: 0;line-height: 40px;
+		}
+
+
+	</style>
+</head>
+<body>
+	<header class="header">
+		<h1>logo</h1>
+		<div class="sns">sns</div>
+		<nav class="gnb">main_menu</nav>
+	</header>
+</body>
+</html>

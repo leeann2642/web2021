@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>position_test4</title>
+	<link rel="stylesheet" href="reset.css">
+
+<style>
+	header{
+		width: 1000px;height: 200px;background-color:green;
+		position: relative;
+		margin: 0 auto;
+	}
+	header h1{width: 100px; height: 100px;background-color: red;
+				line-height: 100px;
+				position: absolute;
+				left: 10px;top: 10px;
+
+	}
+	.util {
+		width: 400px;height: 50px;background-color: yellow;
+		position: absolute;	
+		right: 10px;top: 10px;
+
+	}
+	.util li{width: 25%;
+		float: left;
+		text-align: center;
+		line-height: 50px;
+
+
+
+
+
+
+	}
+	.gnb {
+		width: 980px;height: 50px;background-color: white;
+		position: absolute;	
+		right: 10px;left: 10px;bottom: 10px;
+
+	}
+	.gnb li{width: 25%;
+		float: left;
+		text-align: center;
+		line-height: 50px;
+	
+
+	}
+
+
+
+
+
+</style>
+
+
+</head>
+<body>
+	<header>
+		<h1>LOGO</h1>
+		<nav class="util">
+		<ul class="clearfix">
+			<li>menu1</li>
+			<li>menu2</li>
+			<li>menu3</li>
+			<li>menu4</li>
+		</ul>
+		</nav>
+		<div class="gnb">
+		<ul class="clearfix">
+				<li>main1</li>
+				<li>main2</li>
+				<li>main3</li>
+				<li>main4</li>
+			</ul>
+		</div>
+	</header>
+	
+</body>
+</html>
