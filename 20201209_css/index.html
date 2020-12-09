@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>test shadow</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<style>
+		.box{
+			width: 300px;height: 300px;
+			/*background-image: url(../images/testimg.jpg);
+			background-repeat: no-repeat
+			background-position:center;*/
+			background: url(../images/testimg.jpg);
+
+		}	
+		.box h3{
+			_background: pink;color:white;
+			line-height: 300px;text-align: center;
+			;
+
+		}
+		.txt{text-shadow: 0px 0px 5px #000} 
+		img{display: block;}
+		/*스팬 클래스에 직접지정*/
+		.box1{
+			width: 500px;border : 1px solid #000;
+			
+			padding: 10px;
+		}
+		.box1 h3 {
+			white-space: nowrap; /*글자 길어도 박스 밖으로 나감*/
+			text-overflow: ellipsis; /*생략*/
+			overflow: hidden; /*글자 넘치는 부분 안보여줌.*/
+		}
+
+		.box2{
+			display: table-cell;
+			width: 500px;height: 300px;
+			border: 1px solid #ccc;
+			/*text-align: center;*/
+		}
+		.box2 h3{
+			_display: table-cell;
+			text-align: middle;
+			text-align: center;
+			/*height: 300px;
+			width: 500px;*/
+
+		}
+		.box3{
+			width: 500px;height: 500px;
+			background :skyblue; padding: 20px;
+			box-sizing: border-box;
+		}
+		.box3 h3{
+			_display: none; /*빈공간 없이 사라짐.*/
+			visibility: hidden; /*빈공간남음.*/
+		}
+		.box3 p{opacity: 0.3;}
+
+		.box4{
+			width: 500px;height: 300px;
+			border: 1px solid #000; /*bd*/
+			overflow: hidden; /*oh*/
+			/*overflow: auto;*/ /*oa*/
+			overflow-y: scroll; padding: 20px;
+			box-sizing: border-box;
+			text-align: justify; /*양쪽정렬*/
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<h3><span class="txt">안녕하세요</span></h3>
+	</div> 
+
+	<div class="box1">
+		<h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In ut quas corporis, possimus atque sint, incidunt impedit deleniti quasi itaque unde explicabo aliquid. Autem distinctio molestiae necessitatibus quis. Provident, delectus. 
+		</h3>
+	</div>
+
+	<div class="box2">
+		<h3>text</h3>
+	</div>
+
+	<div class="box3">
+		<h3>안녕하세요</h3>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque molestiae, quisquam fuga ratione, nemo rem inventore mollitia culpa, labore obcaecati doloremque eveniet, assumenda aperiam iste modi nostrum dignissimos dolores aliquid!</p>
+	</div>
+
+	<div class="box4">
+		<p>Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Dolorem culpa reprehenderit repellat ut, veritatis. Illum nostrum repellendus voluptatibus exercitationem enim dolorem cum odio quas est. Hic, nobis incidunt, iste esse rem veniam voluptate alias iure, quasi dolorem ullam dolore iusto minima mollitia deleniti reprehenderit corrupti quas possimus sunt. Laborum voluptatibus corrupti unde quibusdam animi, ipsa delectus expedita dolorum aliquid facere culpa veniam aliquam rerum odit eum ipsam voluptatem dignissimos maxime quae facilis neque quasi laboriosam, deserunt provident? Ex et veniam ipsum. Sunt dignissimos, deleniti repellat, sint commodi earum sapiente, animi beatae neque iusto nulla maiores dolorem aspernatur et repudiandae quibusdam?</p>
+	</div>
+
+</body> 
+</html>
