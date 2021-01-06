@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>function</title>
+</head>
+<body>
+	<a href="#han">링크</a><a href="#">연습</a>
+	<div id="top">top</div>
+	<div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla commodi molestias officiis facilis harum. Consectetur quis repellendus, eos aperiam enim ipsam ex. Blanditiis saepe nam sit laudantium non velit maiores, esse fuga quo aut aspernatur natus dicta incidunt vel sequi sed obcaecati veritatis earum quod qui eligendi aperiam consequatur. In magnam maiores, perferendis. Consequatur ipsam aperiam velit similique ipsa quo voluptas accusantium repellat. Magnam rem soluta iste sunt provident, assumenda eos accusamus incidunt nulla hic quibusdam ullam ipsa nisi minus dignissimos ipsum eveniet sed itaque, porro ipsam cupiditate voluptates, nam aut reprehenderit. Architecto quos odit est deleniti esse libero totam.</div>
+	<div id="han">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi minus libero totam, et. Nam rerum voluptatem, eligendi repellendus esse laboriosam error incidunt, aliquid vero voluptates sint excepturi autem! Maxime, deserunt.</div>
+
+	<script>
+		
+		function han(){
+			return false;
+		}
+	</script>
+
+	<div style="height:1000px">
+		<a href="#top">위로</a>
+		<!-- 링크 차단3가지 -->
+		<a href="#" onclick="han();return false;">연습</a> 
+		<a href="javascript:void(0)">연습</a>
+		<a href="#" onclick="return false">연습</a>
+	</div>
+
+	<script>
+		function printMsg(name,age){
+			document.write("학생이름" + name + "<br>");
+			document.write("나이" + age + "살<br>");
+		}
+
+		printMsg("홍길동",20);
+
+	</script>
+	<button type="button" onclick="printMsg('홍길동',20)">학생정보</button>
+</body>
+</html>

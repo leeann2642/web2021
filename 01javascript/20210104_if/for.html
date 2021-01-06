@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>for</title>
+	<style>
+		.number{background: skyblue}
+		table{
+			border-collapse: collapse;
+			width: 100%;
+		}
+		td{border: 1px solid #000;text-align: center;}
+	</style>
+</head>
+<body>
+	<script>
+		var dan2 = 2;
+		document.write(dan2 + "* 1 ="+ (dan2*1) +"<br>");
+		document.write(dan2 + "* 2 ="+ (dan2*2) +"<br>");
+		document.write(dan2 + "* 3 ="+ (dan2*3) +"<br>");
+		document.write(dan2 + "* 4 ="+ (dan2*4) +"<br>");
+		document.write(dan2 + "* 5 ="+ (dan2*5) +"<br>");
+		document.write(dan2 + "* 6 ="+ (dan2*6) +"<br>");
+		document.write(dan2 + "* 7 ="+ (dan2*7) +"<br>");
+		document.write(dan2 + "* 8 ="+ (dan2*8) +"<br>");
+		document.write(dan2 + "* 9 ="+ (dan2*9) +"<br>");
+
+			//초기값,비교문,증감 연산자 //구구단 실행문
+		for(var i=0;i<10;i++){
+			//document.write(i); //0123456789
+			document.write(dan2 + " * " + i +" = " + (dan2*1) +"<br>");
+		} 
+
+
+		for(var j=1;j<=9;j++){
+			document.write("<p class='number'>");
+			document.write(dan2 + "*" + j + "=" +(dan2*j));
+			document.write("</p>");
+		}
+
+		var table = "<table>";
+
+		for(var i=1;i<10;i++){
+			table += "<tr>"; //tabel = table + "<tr>"
+			table += "<td>" + dan2 + " x " + i + " = " +(dan2*i) + "</td>";
+			table += "</tr>";
+		}
+		table += "</tr>"
+		table += "</table>"
+
+		document.write(table);
+	</script>
+</body>
+</html>
