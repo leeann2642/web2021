@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>onload</title>
+	<script src="../js/jquery-3.1.1.min.js"></script>
+	<script>
+		window.onload = function(){
+			//페이지 완전 로딩후 실행
+			alert("안녕하세요");
+
+		};
+		window.onload = function(){
+			//페이지 완전 로딩후 실행
+			alert("안녕하세요!!!");
+			
+		};
+
+		function gogo(){
+			alert("반갑습니다.") //젤마지막 함수만 실행됨. 제이쿼리는 여래개 가능함.
+
+		}
+		$(document).ready(function(){
+			alert("jquery1")
+		}); //제이쿼리
+
+		$(document).ready(function(){
+			alert("jquery2")
+		}); //제이쿼리
+	</script>
+</head>
+<body onload ="gogo()">
+	
+</body>
+</html>

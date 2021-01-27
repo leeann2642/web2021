@@ -28,13 +28,45 @@
 
 	<script>
 		function printMsg(name,age){
-			document.write("학생이름" + name + "<br>");
-			document.write("나이" + age + "살<br>");
+			// document.write("학생이름" + name + "<br>");
+			// document.write("나이" + age + "살<br>");
+			document.getElementById("sName").innerHTML = "학생이름 : " + name + ", 나이 : " + age + "살";
+
+			// $("#sName").html("학생이름 : "+ name + ",나이 : " + age + "살"); =>제이쿼리
 		}
 
-		printMsg("홍길동",20);
+		// printMsg("홍길동",20);
 
 	</script>
+	<div id="sName"></div>
 	<button type="button" onclick="printMsg('홍길동',20)">학생정보</button>
+	<button type="button" onclick="printMsg('홍길동',25)">학생정보1</button>
+    <br>
+
+
+
+    <div id="hap"></div>
+	<script>
+		var result;
+		function add(name,n){
+			document.write(name+ "학생이 1부터 "+n+"까지 덧셈 수행<br>");
+			var sum =0;
+			for(var i=1; i<=n; i++){
+				// document.write(i);
+				sum = sum +i; //sum += i;
+			}
+			// document.write(sum);
+			return sum;
+		}
+		// add("홍길동",10);
+		result = add("홍길동",10);
+		document.write("결과 : " + result +"<br>");
+		document.getElementById("hap").innerHTML = result;
+		
+		// add("이영희",100);
+		result = add("홍길동",100);
+		document.write("결과 : " + result +"<br>");
+		document.getElementById("hap").innerHTML = result;
+	</script>
 </body>
 </html>
