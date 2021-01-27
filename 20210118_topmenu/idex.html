@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>menu</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<style>
+		.submenu{display: none;}
+		nav.gnb{width: 1000px;margin: 0 auto;}
+		nav.gnb>ul>li{float: left;width: 20%;} /*메인 메뉴의 ul>li*/
+		nav.gnb>ul>li>a{display: block;text-align: center;line-height: 40px;font-weight: bold;}
+		nav.gnb>ul>li:hover{background-color: blue;}
+		nav.gnb>ul>li:hover a{color:white;}
+
+		/*nav.gnb>ul>li:nth-child(1) .submenu{display: block;}*/
+		.submenu{padding-bottom: 10px;}
+		.submenu li{}
+		.submenu a{display: block;text-align: center;line-height: 30px;}
+		.submenu li:hover{background: green;}
+		nav.gnb>ul>li:hover .submenu{display: block;}
+
+		.visual{height: 400px;background: pink;}
+	</style>
+</head>
+<body>
+	<nav class="gnb">
+		<ul class="clearfix">
+			<li><a href="#">menu1</a> <!-- mainmenu -->
+				<ul class="submenu"> <!-- submenu -->
+					<li><a href="#">smenu1</a></li>
+					<li><a href="#">smenu1</a></li>
+					<li><a href="#">smenu1</a></li>
+					<li><a href="#">smenu1</a></li>
+				</ul>
+			</li>
+				<li><a href="#">menu2</a> <!-- mainmenu -->
+				<ul class="submenu"> <!-- submenu -->
+					<li><a href="#">smenu1</a></li>
+					<li><a href="#">smenu1</a></li>
+					<li><a href="#">smenu1</a></li>
+					<li><a href="#">smenu1</a></li>
+				</ul>
+			</li>
+				<li><a href="#">menu3</a> <!-- mainmenu -->
+				<ul class="submenu"> <!-- submenu -->
+					<li><a href="#">smenu1</a></li>
+					<li><a href="#">smenu1</a></li>
+					<li><a href="#">smenu1</a></li>
+					<li><a href="#">smenu1</a></li>
+				</ul>
+			</li>
+				<li><a href="#">menu4</a> <!-- mainmenu -->
+				<ul class="submenu"> <!-- submenu -->
+					<li><a href="#">smenu1</a></li>
+					<li><a href="#">smenu1</a></li>
+					<li><a href="#">smenu1</a></li>
+					<li><a href="#">smenu1</a></li>
+				</ul>
+			</li>
+						<li><a href="#">menu5</a> <!-- mainmenu -->
+				<ul class="submenu"> <!-- submenu -->
+					<li><a href="#">smenu1</a></li>
+					<li><a href="#">smenu1</a></li>
+					<li><a href="#">smenu1</a></li>
+					<li><a href="#">smenu1</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	<div class="visual"></div>
+</body>
+</html>
