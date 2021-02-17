@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>event</title>
+</head>
+<style>
+	html,body{height: 100%;}
+</style>
+<!-- <body onclick ="mouse(event)"> --> <!-- 바디에 온클릭 넣을시 바디 높이값 필요, -->
+<body>
+	<h2 onclick ="mouse(event)" style="background-color:skyblue">Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Temporibus totam eum unde ipsum aliquid quae soluta fuga, repudiandae odio eveniet nihil, et saepe nobis molestias maiores. Praesentium reprehenderit provident, voluptates.</h2>
+	<h2 onclick ="offm(event)" style="border: 1px solid #000;width: 300px;height: 400px;margin-left: 50px;">Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Temporibus totam eum unde ipsum aliquid quae soluta fuga, repudiandae odio eveniet nihil, et saepe nobis molestias maiores. Praesentium reprehenderit provident, voluptates.</h2>
+	<p id="event"></p>
+	<script>
+		function mouse(e){
+			var x = e.clientX;
+			var y = e.clientY;
+			console.log("x 값 :" + x + ", Y 값 : " + y );
+			var print = "x 값 :" + x + ", Y 값 : " + y;
+			// document.getElementById("event").innerHTML = "x 값 :" + x + ", Y 값 : " + y;
+			document.getElementById("event").innerHTML = print;
+		}
+		function offm(e){
+			var x = e.offsetX;
+			var y = e.offsetY;
+			var print = "x offset 값 :" + x + ", Y offset 값 : " + y;
+			document.getElementById("event").innerHTML = print;
+		}
+
+	</script>
+</body>
+</html>

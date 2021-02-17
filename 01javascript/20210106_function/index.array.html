@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>arry</title>
+</head>
+<body>
+	<div id="han"></div>
+	<script>
+		//var num = 1;=객체 new number(1) 
+		//var str = "han";객체 new string("han")
+
+		var city = ["seoul","busan","incheon","suwon"];//객체 new array[]
+
+		function printArr(){
+		 var txt = "";
+		  for(var i=0;i<city.length;i++){
+			// document.write(i)
+			//document.write("배열데이터[" + i +"]는 " +city[i]+"<br>");
+
+			txt += "배열데이터[" + i + "]는 " +city[i]+"<br>";
+	
+		}
+		document.getElementById("han").innerHTML = txt;
+	}
+	// printArr();
+	</script>
+	<div onclick="printArr()">데이터출력</div>
+</body>
+</html>

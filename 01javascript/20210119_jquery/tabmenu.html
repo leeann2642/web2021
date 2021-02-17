@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>tabmenu</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<script src="../js/jquery-3.1.1.min.js"></script>
+	<style>
+		.tabWrap{width: 1000px;margin: 0 auto;}
+		.tab li{float: left;width: 200px;text-align: center;line-height: 40px;cursor: pointer;}
+		.tab li.active{background: skyblue;}
+		.boxWrap div{border: 1px solid #000;padding: 20px;display: none;}
+	</style>
+	<script>
+		$(document).ready(function(){
+			//$(".boxWrap>div").hide();
+			$(".boxWrap>div").eq(0).fadeIn();
+
+			$(".tabWrap>ul>li").click(function(){
+				var num = $(this).index(); 
+				//값을 가지고 옴(몇번째를 가지고 올껀지)
+				console.log(num);
+				
+				$(".tabWrap>ul>li").removeClass();
+				$(this).addClass("active");
+
+				$(".boxWrap>div").hide();
+				$(".boxWrap>div").eq(num).fadeIn();
+			});
+		});
+
+	</script>
+</head>
+<body>
+	<div class="tabWrap">
+		<ul class="tab clearfix">
+			<li class="active">menu1</li>
+			<li>menu2</li>
+			<li>menu3</li>
+			<li>menu4</li>
+			<li>menu5</li>
+		</ul>
+		<div class="boxWrap">
+			<div>1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quod iure voluptas voluptate architecto inventore odio nulla temporibus. At laudantium delectus obcaecati ut, totam vel dignissimos. Harum iusto quisquam, vel.</div>
+			<div>2. Eos ducimus, quas nulla ea a ut necessitatibus architecto incidunt suscipit, possimus id odio neque officiis quasi. Suscipit, aliquid? Maxime similique modi accusamus assumenda quo alias aut delectus laudantium id.</div>
+			<div>3. Maxime nobis blanditiis saepe, ipsa incidunt illum fuga harum officia rem placeat laborum animi sed neque doloribus. Quis facere ipsum similique quos architecto quidem consequatur illum fugit assumenda laborum. Cumque.</div>
+			<div>4. Ullam perferendis, ipsum accusantium, eligendi culpa placeat ea dolorem, exercitationem earum maiores cum iure provident repellat velit debitis aperiam nemo sit! Quod voluptate doloribus blanditiis commodi, mollitia quam, sed autem?</div>
+			<div>5. Dignissimos nobis provident minima ut dicta distinctio optio esse aspernatur reprehenderit alias, aperiam deserunt expedita nihil quis odio obcaecati quaerat vero maxime? Iure, repellendus, ipsum. Maxime eaque reprehenderit distinctio id.</div>
+		</div>
+	</div>
+</body>
+</html>
